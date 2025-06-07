@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e); /* Dark gradient background */
+    color: #e0e0e0;
+    line-height: 1.6;
+    direction: rtl;
+    text-align: right;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1b1b2b;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: relative; /* Needed for absolute positioning of back button */
+}
+
+header h1 {
+    margin: 0;
+}
+
+.back-button {
+    position: absolute;
+    left: 20px; /* Position from the left */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #00ff99; /* Greenish color */
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    border: 1px solid #00ff99;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #00ff99;
+    color: #1b1b2b;
+}
+
+
+.container {
+    width: 95%; /* Wider container for chart */
+    max-width: 1400px; /* Max width for chart */
+    margin: 20px auto;
+    padding: 0 10px; /* Less padding */
+    flex-grow: 1;
+}
+
+#tradingview-chart-container {
+    background-color: #2a2a4a; /* Dark background for the chart area */
+    border-radius: 10px;
+    overflow: hidden; /* Hide anything outside the border-radius */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+footer {
+    background-color: #1b1b2b;
+    color: #e0e0e0;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 20px; /* Less space above footer on chart page */
+}

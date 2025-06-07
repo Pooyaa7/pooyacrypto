@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قیمت لحظه‌ای ارزهای دیجیتال</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Optional: Link to a fancy font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>قیمت لحظه‌ای ارزهای دیجیتال</h1>
+    </header>
+
+    <main class="container">
+        <!-- This section will display cryptocurrency prices -->
+        <section id="crypto-prices" class="price-list">
+            <!-- Crypto items will be added/updated here by JavaScript -->
+
+            <!-- BITCOIN ITEM -->
+            <div class="crypto-item" data-coin-id="bitcoin" data-coin-symbol="BTCUSD"> <!-- Added data-coin-symbol -->
+                <img src="" alt="Bitcoin Logo" class="coin-logo">
+                <h2 class="coin-name">بیت کوین (BTC)</h2>
+                <p class="current-price">قیمت: در حال بارگذاری...</p>
+                <p class="price-change">تغییر 24 ساعت: در حال بارگذاری...</p>
+                <!-- Chart container removed -->
+            </div>
+
+            <!-- ETHEREUM ITEM -->
+            <div class="crypto-item" data-coin-id="ethereum" data-coin-symbol="ETHUSD"> <!-- Added data-coin-symbol -->
+                 <img src="" alt="Ethereum Logo" class="coin-logo">
+                <h2 class="coin-name">اتریوم (ETH)</h2>
+                <p class="current-price">قیمت: در حال بارگذاری...</p>
+                <p class="price-change">تغییر 24 ساعت: در حال بارگذاری...</p>
+                 <!-- Chart container removed -->
+            </div>
+
+            <!-- RIPPLE ITEM -->
+             <div class="crypto-item" data-coin-id="ripple" data-coin-symbol="XRPUSD"> <!-- Added data-coin-symbol -->
+                 <img src="" alt="Ripple Logo" class="coin-logo">
+                <h2 class="coin-name">ریپل (XRP)</h2>
+                <p class="current-price">قیمت: در حال بارگذاری...</p>
+                <p class="price-change">تغییر 24 ساعت: در حال بارگذاری...</p>
+                 <!-- Chart container removed -->
+            </div>
+
+            <!-- CARDANO ITEM -->
+             <div class="crypto-item" data-coin-id="cardano" data-coin-symbol="ADAUSD"> <!-- Added data-coin-symbol -->
+                 <img src="" alt="Cardano Logo" class="coin-logo">
+                <h2 class="coin-name">کاردانو (ADA)</h2>
+                <p class="current-price">قیمت: در حال بارگذاری...</p>
+                <p class="price-change">تغییر 24 ساعت: در حال بارگذاری...</p>
+                 <!-- Chart container removed -->
+            </div>
+
+            <!-- DOGECOIN ITEM -->
+             <div class="crypto-item" data-coin-id="dogecoin" data-coin-symbol="DOGEUSD"> <!-- Added data-coin-symbol -->
+                 <img src="" alt="Dogecoin Logo" class="coin-logo">
+                <h2 class="coin-name">دوج کوین (DOGE)</h2>
+                <p class="current-price">قیمت: در حال بارگذاری...</p>
+                <p class="price-change">تغییر 24 ساعت: در حال بارگذاری...</p>
+                 <!-- Chart container removed -->
+            </div>
+            <!-- Add more crypto items here with appropriate data-coin-id and data-coin-symbol -->
+        </section>
+
+        <!-- Section for 3D elements (will hold the dollar model) -->
+        <section id="three-d-container">
+            <!-- 3D dollar model will be rendered here -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 قیمت لحظه‌ای ارزها</p>
+    </footer>
+
+    <!-- Include Three.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.158.0/three.min.js"></script>
+    <!-- Include GLTFLoader for loading .gltf models -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
