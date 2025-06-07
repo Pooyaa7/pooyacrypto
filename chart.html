@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>چارت ارز دیجیتال</title>
+    <link rel="stylesheet" href="chart.css"> <!-- Link to new CSS file -->
+    <!-- Optional: Link to a fancy font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="chart-title">چارت ارز دیجیتال</h1>
+        <a href="index.html" class="back-button">بازگشت به صفحه اصلی</a> <!-- Back button -->
+    </header>
+
+    <main class="container">
+        <!-- TradingView chart will be embedded here dynamically by chart.js -->
+        <div id="tradingview-chart-container" style="width: 100%; height: 500px;">
+            <!-- TradingView widget will be created here -->
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 قیمت لحظه‌ای ارزها</p>
+    </footer>
+
+    <!-- Include TradingView script -->
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script src="chart.js"></script> <!-- Link to new JavaScript file -->
+</body>
+</html>
